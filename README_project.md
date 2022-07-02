@@ -3,7 +3,7 @@
 - [Pytorch](https://pytorch.org/get-started/locally/) >= 0.4.0
 (need to set up on the gpu farm)
 # Evaluating the pretrainied model
-- Preprocess the Human3.6 DataSet and get npz files(done!, the file name is ```data_2d_h36m_cpn_ft_h36m_dbb.npz``` in the ```data``` folder)
+- Preprocess the Human3.6 DataSet and get npz files(done!, download [data_2d_h36m_cpn_ft_h36m_dbb.npz](https://drive.google.com/file/d/1FfnFpFzoOsJ2kzaY_L9q8buS7t2GClBL/view?usp=sharing) and put it in the ```data``` folder)
 - Download ```pretrained_h36m_cpn.bin``` and put it into the ```checkpoint``` folder. (done!)
 - Test on Human 3.6m. (done!)
 
