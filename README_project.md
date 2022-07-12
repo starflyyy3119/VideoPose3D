@@ -1,8 +1,8 @@
 # Dependencies
 
-- Python 3+ distribution (need to setup on gpu farm)
-- [Pytorch](https://pytorch.org/get-started/locally/) >= 0.4.0
-  (need to set up on the gpu farm)
+- Python 3+ distribution
+- [Pytorch](https://pytorch.org/get-started/previous-versions/) v1.10.0
+- Cuda v11.3
 
 # Evaluating the pretrainied model
 
@@ -32,7 +32,17 @@ ffmpeg -i demo.mp4 -ss 0:11 -to 0:49 -c copy cxk.mp4
 
 ## 3. Inferring 2D keypoints with Detectectron
 
-- Set up [Detectron2](https://github.com/facebookresearch/detectron2) and infer 2D keypoints. (need to set up on gpu farm, done!)
+- Set up [Detectron2](https://github.com/facebookresearch/detectron2) and infer 2D keypoints.
+
+```shell
+!conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch -c conda-forge -y
+```
+
+```shell
+!python -m pip install detectron2 -f \
+  https://dl.fbaipublicfiles.com/detectron2/wheels/cu113/torch1.10/index.html
+```
+
 - Follow the `Inference.md` and make visualizations (done!).
 
 ```shell
